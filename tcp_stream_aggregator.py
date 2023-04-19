@@ -1,4 +1,5 @@
 #!/usr/bin/python3 
+import sys
 from subprocess import PIPE, Popen
 
 def cmdline(command):
@@ -24,4 +25,4 @@ while True:
     else:
         break
     count += 1
-    output_file.close()
+ output_file.close()
