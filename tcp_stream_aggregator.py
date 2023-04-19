@@ -1,11 +1,11 @@
 #!/usr/bin/python3 
-from subprocesses import PIPE, Popen
+from subprocess import PIPE, Popen
 
 def cmdline(command):
     process = Popen(
             args=command,
-            stdout=PIPE
-            shell=True
+            stdout=PIPE,
+            shell=True,
             universal_newlines=True
     )
     return process.communicate()[0]
